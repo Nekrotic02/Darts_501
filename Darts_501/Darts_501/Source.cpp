@@ -22,7 +22,7 @@ int main()
 
 	Player* player_1 = new Player(name, accuracy);
 
-	// cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+	cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
 
 	cout << endl;
 	cout << "Please enter Player 1 name: ";
@@ -34,7 +34,7 @@ int main()
 
 	Player* player_2 = new Player(name, accuracy);
 
-	// cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+	cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
 	// Number of games to play
 	int games{};
@@ -42,7 +42,7 @@ int main()
 	cin >> games;
 	cout << endl;
 
-	// cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+	cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
 	int first{};
 	cout << "Who Plays First?" << endl;
@@ -52,7 +52,8 @@ int main()
 	cin >> first;
 	cout << endl;
 
-	// cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+	cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
 	// Who Plays First
 	first = first - 1;
 	Results* results = new Results; 

@@ -26,7 +26,7 @@ void Game::Play_Game(Results* results, char first)
 	{
 		players[0]->Reset_Score();
 		players[1]->Reset_Score();
-		while (players[0]->Get_Score() != 0 && players[1]->Get_Score() != 0)
+		while (players[0]->Get_Score() != 0 && players[1]->Get_Score() != 0 && players[0]->Get_Wins() != 7 && players[1]->Get_Wins() != 7)
 		{
 			int temp_score = players[current_player]->Get_Score();
 			for (short int shots{}; shots < 2; shots++)
