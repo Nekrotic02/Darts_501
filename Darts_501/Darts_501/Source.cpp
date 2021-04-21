@@ -42,8 +42,6 @@ int main()
 	cin >> games;
 	cout << endl;
 
-	cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-
 	int first{};
 	cout << "Who Plays First?" << endl;
 	cout << "1) Player 1" << endl;
@@ -51,8 +49,6 @@ int main()
 	cout << "Answer: ";
 	cin >> first;
 	cout << endl;
-
-	cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
 	// Who Plays First
 	first = first - 1;
